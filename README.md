@@ -33,7 +33,6 @@ _**Heaven’s Light is Our Guide**_
 ## Submitted by:
 
 ### **Shakib Shadman**
-### [Codeforces](https://codeforces.com/profile/_Shadman_)
 #### Roll No: 2410025
 #### Registration No: 1078/2024-2025
 #### Department of Electrical and Computer Engineering
