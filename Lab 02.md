@@ -318,6 +318,9 @@ $$
 
 ### Practical Circuit Implementation
 
+<img width="345" height="116" alt="image" src="https://github.com/user-attachments/assets/a559cc99-4769-4fac-8d15-c2ee36343d0d" />
+
+
 Since the simplified expression is simply $F=A$, the output can be obtained directly from input $A$. No AND or OR gate is required for the simplified implementation.
 
 ---
@@ -425,7 +428,7 @@ $$
 
 ### Practical Circuit Implementation
 
-<img width="345" height="116" alt="image" src="https://github.com/user-attachments/assets/a559cc99-4769-4fac-8d15-c2ee36343d0d" />
+<img width="490" height="240" alt="image" src="https://github.com/user-attachments/assets/54759a9d-b5ea-49ee-9e86-2f5af6c27ca5" />
 
 
 The simplified output is always LOW:
