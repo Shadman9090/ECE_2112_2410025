@@ -425,6 +425,9 @@ $$
 
 ### Practical Circuit Implementation
 
+<img width="345" height="116" alt="image" src="https://github.com/user-attachments/assets/a559cc99-4769-4fac-8d15-c2ee36343d0d" />
+
+
 The simplified output is always LOW:
 
 $$
@@ -556,9 +559,12 @@ Therefore, $B$ is first passed through a NOT gate and then combined with $A$ usi
 
 ## Circuit Implementation
 
+<img width="524" height="188" alt="image" src="https://github.com/user-attachments/assets/9f7020d0-826a-4207-ac92-cff30fb2c050" />
+
+
 The simplified expressions were implemented using basic logic gates. The following diagram shows the practical circuit implementations prepared for the four problems.
 
-![Circuit Implementations](circuit_implementations.png)
+
 
 ### Observed Results
 
