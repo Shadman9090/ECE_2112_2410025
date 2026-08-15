@@ -13,7 +13,7 @@ _**Heaven’s Light is Our Guide**_
   ## **Rajshahi University of Engineering and Technology** <br> 
   ### **Department of Electrical & Computer Engineering**
   ### **Lab Reports**<br>
-  **Course Name:** Analog Electronic Circuits 2- Sessional<br>
+  **Course Name:** Digital Techniques - Sessional<br>
   **Course Code:** ECE 2112
 </div>
 <br>
