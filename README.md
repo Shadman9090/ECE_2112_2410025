@@ -49,6 +49,7 @@ _**Heaven’s Light is Our Guide**_
 | Lab No. | Title | Link 
 | :---: | :---: | :---: 
 | 01 | Universal Gates and Combinational Circuits | [Lab 01](https://github.com/Shadman9090/ECE_2112_2410025/tree/main/Lab%2001)|
+| 02 | Simplification and Implementation of Boolean Expressions Using Boolean Algebra | [Lab 02](https://github.com/Shadman9090/ECE_2112_2410025/blob/main/Lab%2002.md)|
 
 
 
