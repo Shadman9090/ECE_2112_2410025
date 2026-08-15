@@ -1,14 +1,15 @@
 # Experiment-02: Simplification of Boolean Expressions Using Boolean Algebra
+
 ### Introduction
 
 Boolean algebra provides a simple way to represent and manipulate the logic used in digital circuits. It is based on binary values, where the variables can only be **0 (LOW)** or **1 (HIGH)**.
 
 By applying Boolean rules and theorems, complicated logic expressions can be reduced into simpler equivalent forms. This process is important in digital circuit design because a simplified expression generally requires fewer logic gates, less hardware, and lower implementation cost.
 
-In this experiment, the given Boolean functions are analyzed and simplified step-by-step using the appropriate laws and identities of Boolean algebra.
-
+In this experiment, the given Boolean functions are analyzed and simplified step-by-step using the appropriate laws and identities of Boolean algebra. The simplified expressions are then considered for practical implementation using logic gates.
 
 ### Apparatus Required
+
 <ul>
 <li>Digital Logic Training Board</li>
 <li>Jumper/Connecting Wires</li>
@@ -19,31 +20,33 @@ In this experiment, the given Boolean functions are analyzed and simplified step
 </ul>
 
 ### Procedure
+
 <ol>
-  <li>The Boolean functions provided for the experiment were examined and written in their original form.</li>
+<li>The Boolean functions provided for the experiment were examined and written in their original form.</li>
 <li>The variables and logical operations involved in each function were identified.</li>
 <li>Suitable Boolean theorems and identities were selected for the simplification process.</li>
 <li>The expressions were reduced sequentially by applying the selected laws at each step.</li>
 <li>Common, repeated, and unnecessary terms were removed wherever possible.</li>
 <li>The resulting expressions were checked to ensure that they were logically equivalent to the original functions.</li>
-<li>The simplified functions were considered for practical implementation using logic gates and may be verified with a digital logic trainer.</li>
+<li>The simplified functions were implemented using appropriate logic gates and the outputs were observed.</li>
 </ol>
 
-### Calculations:
+### Calculations
+
 ## Problem-1
 
 Given,
 
 $$
 F(A,B,C)=A'BC+AB'C+ABC'+ABC
-$$ 
+$$
 
-#### 1st Procedure: Using Boolean Expression
+### 1st Procedure: Using Boolean Expression
 
 Given,
 
 $$
-F(A,B,C)=A'BC+AB'C+ABC'+ABC
+F=A'BC+AB'C+ABC'+ABC
 $$
 
 Add the redundant $ABC$ term where convenient:
@@ -76,15 +79,13 @@ $$
 \boxed{F=AB+AC+BC}
 $$
 
-#### Final Answer:
+### Final Answer:
 
 $$
 \boxed{F=AB+AC+BC}
 $$
 
-<br>
-
-#### 2nd Procedure: K-Map Simplification <br>
+### 2nd Procedure: K-Map Simplification
 
 Given,
 
@@ -97,19 +98,19 @@ $$
 From the given expression:
 
 $$
-A'BC = m_3
+A'BC=m_3
 $$
 
 $$
-AB'C = m_5
+AB'C=m_5
 $$
 
 $$
-ABC' = m_6
+ABC'=m_6
 $$
 
 $$
-ABC = m_7
+ABC=m_7
 $$
 
 Therefore,
@@ -137,7 +138,7 @@ $$
 
 #### Step 3: Make the groups
 
-#### Group 1: $m_3$ and $m_7$
+**Group 1: $m_3$ and $m_7$**
 
 Common variables:
 
@@ -151,7 +152,7 @@ $$
 m_3+m_7=BC
 $$
 
-#### Group 2: $m_5$ and $m_7$
+**Group 2: $m_5$ and $m_7$**
 
 Common variables:
 
@@ -165,7 +166,7 @@ $$
 m_5+m_7=AC
 $$
 
-#### Group 3: $m_6$ and $m_7$
+**Group 3: $m_6$ and $m_7$**
 
 Common variables:
 
@@ -187,19 +188,25 @@ $$
 F=BC+AC+AB
 $$
 
-Therefore, the final simplified answer is:
+Therefore,
 
 $$
 \boxed{F(A,B,C)=AB+AC+BC}
 $$
 
-#### Before Simplification: 
-<img width="623" height="360" alt="image" src="https://github.com/user-attachments/assets/0c5d5bc6-fa5f-453a-be2e-2c0e7d044995" />
+### Practical Circuit Implementation
 
-#### After Simplification:
-<img width="560" height="324" alt="image" src="https://github.com/user-attachments/assets/d5e22ada-6318-4e96-8dff-31f87fd3dd41" />
+The simplified function was implemented using three 2-input AND gates followed by an OR gate:
 
-## Problem 2
+$$
+F=AB+AC+BC
+$$
+
+The circuit uses the three product terms $AB$, $AC$, and $BC$ as inputs to the OR stage.
+
+---
+
+## Problem-2
 
 Given,
 
@@ -207,7 +214,8 @@ $$
 F(A,B,C)=A(A+B)(A+B+C)
 $$
 
-#### 1st Procedure: using boolean expression
+### 1st Procedure: Using Boolean Expression
+
 Using the absorption law,
 
 $$
@@ -238,15 +246,9 @@ $$
 \boxed{F=A}
 $$
 
-#### 2nd Procedure: using K-Map:
+### 2nd Procedure: K-Map Simplification
 
 #### Step 1: Find the minterms
-
-First, simplify the given expression to determine the truth table values:
-
-$$
-F=A(A+B)(A+B+C)
-$$
 
 Since $A=1$ is required for the function to be $1$,
 
@@ -254,10 +256,10 @@ $$
 F=1 \quad \text{when } A=1
 $$
 
-Therefore, the function is $1$ for:
+Therefore, the function is 1 for:
 
 $$
-A,B,C = 100,\ 101,\ 110,\ 111
+A,B,C=100,\ 101,\ 110,\ 111
 $$
 
 Hence,
@@ -279,7 +281,7 @@ Using Gray Code order:
 
 #### Step 3: Make the Group
 
-We can group all four 1's together:
+All four 1's can be grouped together:
 
 $$
 m_4,\ m_5,\ m_6,\ m_7
@@ -305,19 +307,19 @@ $$
 F=A
 $$
 
-#### Final Answer:
+### Final Answer:
 
 $$
 \boxed{F=A}
 $$
 
-#### Before Simplification:
-<img width="584" height="247" alt="image" src="https://github.com/user-attachments/assets/adf3778d-b56c-457d-8820-c8aed29f9be5" />
+### Practical Circuit Implementation
 
-#### After Simplification:
-<img width="406" height="159" alt="image" src="https://github.com/user-attachments/assets/c9132d0f-c86f-42c2-afcc-07eb41701bdf" />
+Since the simplified expression is simply $F=A$, the output can be obtained directly from input $A$. No AND or OR gate is required for the simplified implementation.
 
-## Problem 3
+---
+
+## Problem-3
 
 Given,
 
@@ -325,7 +327,7 @@ $$
 F(A,B,C)=(A+(BC)')'(AB+ABC)
 $$
 
-#### 1st Procedure: using boolean expression
+### 1st Procedure: Using Boolean Expression
 
 First, consider the first part:
 
@@ -381,7 +383,13 @@ $$
 F=0
 $$
 
-#### using K-Map
+### Final Answer:
+
+$$
+\boxed{F=0}
+$$
+
+### 2nd Procedure: K-Map Simplification
 
 Since $F=0$ for all possible combinations of $A$, $B$, and $C$, there are no minterms.
 
@@ -398,9 +406,7 @@ The K-Map contains all 0s:
 | $11$ | 0 | 0 |
 | $10$ | 0 | 0 |
 
-#### Step 3: K-Map Simplification
-
-There are no 1s to group.
+There are no 1's to group.
 
 Therefore,
 
@@ -408,19 +414,25 @@ $$
 F=0
 $$
 
-#### Final Answer:
+### Final Answer:
 
 $$
 \boxed{F=0}
 $$
 
-#### Before Simplification
-<img width="660" height="329" alt="image" src="https://github.com/user-attachments/assets/867e4ee8-896f-4aa6-9555-6f31ab1f6794" />
+### Practical Circuit Implementation
 
-#### After Simplification
-<img width="358" height="233" alt="image" src="https://github.com/user-attachments/assets/2a7b98da-415b-4925-8b61-57ba142bd1ec" />
+The simplified output is always LOW:
 
-## Problem 4
+$$
+F=0
+$$
+
+Thus, the circuit output remains 0 for every possible combination of the input variables.
+
+---
+
+## Problem-4
 
 Given,
 
@@ -428,11 +440,9 @@ $$
 F(A,B,C)=\left[B'(A+B)+(A+B)(A+B')\right]B'
 $$
 
-### 1st Procedure: using boolean expression
+### 1st Procedure: Using Boolean Expression
 
-First, simplify the expression to identify the minterms.
-
-Consider,
+First, simplify the first term:
 
 $$
 B'(A+B)=AB'+B'B
@@ -474,7 +484,7 @@ $$
 F=AB'
 $$
 
-Since $C$ does not appear in the simplified expression, the function is $1$ for both values of $C$ when $A=1$ and $B=0$.
+Since $C$ does not appear in the simplified expression, the function is 1 for both values of $C$ when $A=1$ and $B=0$.
 
 Thus,
 
@@ -482,7 +492,7 @@ $$
 F(A,B,C)=\Sigma m(4,5)
 $$
 
-### 2nd Procedure: using K-Map
+### 2nd Procedure: K-Map Simplification
 
 Using Gray Code order:
 
@@ -493,7 +503,7 @@ Using Gray Code order:
 | $11$ | 0 | 0 |
 | $10$ | **1** | **1** |
 
-### Step 3: Make the Group
+#### Step 1: Make the Group
 
 Group the two adjacent 1's:
 
@@ -515,7 +525,7 @@ $$
 AB'
 $$
 
-### Step 4: Write the Simplified Expression
+#### Step 2: Write the Simplified Expression
 
 Therefore,
 
@@ -529,12 +539,61 @@ $$
 \boxed{F=AB'}
 $$
 
-#### Before Simplification
-<img width="759" height="360" alt="image" src="https://github.com/user-attachments/assets/5e165baa-f37f-4822-ba93-b64e71e668aa" />
+### Practical Circuit Implementation
 
-#### After Simplification
-<img width="428" height="163" alt="image" src="https://github.com/user-attachments/assets/67fdf0f5-ae75-46e6-8e6f-645233a12f49" />
+The simplified function is:
 
+$$
+F=AB'
+$$
 
+Therefore, $B$ is first passed through a NOT gate and then combined with $A$ using an AND gate.
 
+---
 
+## Circuit Implementation
+
+The simplified expressions were implemented using basic logic gates. The following diagram shows the practical circuit implementations prepared for the four problems.
+
+![Circuit Implementations](circuit_implementations.png)
+
+### Observed Results
+
+The implemented circuits produced the expected simplified outputs:
+
+| Problem | Simplified Function | Expected Output |
+|:---:|:---:|:---:|
+| 1 | $AB+AC+BC$ | Correct |
+| 2 | $A$ | Correct |
+| 3 | $0$ | Always LOW |
+| 4 | $AB'$ | Correct |
+
+### Discussion
+
+The Boolean expressions were successfully simplified using Boolean algebra and verified using K-Map techniques. The simplified forms require fewer logic operations than the original expressions, which reduces circuit complexity.
+
+For Problem-1, the original four minterm expression was reduced to three product terms. Problem-2 was reduced directly to $A$ using the absorption law. Problem-3 was reduced to the constant logic value $0$ because the expression contains both $A$ and $A'$. Problem-4 was reduced to $AB'$, requiring only one NOT gate and one AND gate.
+
+The practical gate implementations were consistent with the obtained simplified expressions. Hence, the experiment demonstrates how Boolean algebra and K-Maps can be used to minimize digital logic circuits and reduce the required hardware.
+
+### Conclusion
+
+The given Boolean expressions were successfully simplified using Boolean algebra and K-Map methods. The simplified expressions were obtained as:
+
+$$
+\boxed{F_1=AB+AC+BC}
+$$
+
+$$
+\boxed{F_2=A}
+$$
+
+$$
+\boxed{F_3=0}
+$$
+
+$$
+\boxed{F_4=AB'}
+$$
+
+The corresponding logic circuits were implemented using basic gates, and the observed outputs agreed with the expected results. This experiment demonstrates the importance of Boolean simplification in designing simpler, more efficient, and economical digital logic circuits.
