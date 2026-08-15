@@ -196,6 +196,9 @@ $$
 
 ### Practical Circuit Implementation
 
+<img width="918" height="474" alt="image" src="https://github.com/user-attachments/assets/24987f59-1eeb-4b9b-a0eb-ac7fd0e93964" />
+
+
 The simplified function was implemented using three 2-input AND gates followed by an OR gate:
 
 $$
